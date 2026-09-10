@@ -13,7 +13,7 @@ export const siteData = {
   email: 'myadav@odu.edu',
   lastUpdated: 'September 2026',
   introduction:
-    'We combine first-principles accelerator models, machine learning, beam diagnostics, and EPICS controls to predict beam behavior, quantify uncertainty, and optimize injector performance.',
+    'We use physics-based models, machine learning, and controls data to predict beam behavior and improve accelerator injector performance.',
 
   pi: {
     name: 'Monika Yadav, Ph.D.',
