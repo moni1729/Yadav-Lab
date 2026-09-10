@@ -109,8 +109,8 @@ export const siteData = {
       program: 'Graduate Researcher',
     },
     {
-      name: 'Kamelia',
-      initials: 'K',
+      name: 'Kamelia Marchand Vaudrin',
+      initials: 'KMV',
       program: "Master's Student",
     },
   ] as Array<{
