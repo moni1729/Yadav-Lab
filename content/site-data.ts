@@ -97,14 +97,27 @@ export const siteData = {
     },
   ],
 
-  /** Example student item:
-   * { name: 'Student Name', initials: 'SN', program: 'Ph.D. in ...', focus: 'Research topic' }
-   */
-  students: [] as Array<{
+  students: [
+    {
+      name: 'Karen Makino',
+      initials: 'KM',
+      program: 'Graduate Researcher',
+    },
+    {
+      name: 'Jacob Bird',
+      initials: 'JB',
+      program: 'Graduate Researcher',
+    },
+    {
+      name: 'Kamelia',
+      initials: 'K',
+      program: 'Graduate Researcher',
+    },
+  ] as Array<{
     name: string;
     initials: string;
-    program: string;
-    focus: string;
+    program?: string;
+    focus?: string;
   }>,
 
   openings: [

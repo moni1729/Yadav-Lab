@@ -67,8 +67,8 @@ export default function TeamPage() {
             {siteData.students.map((student) => (
               <article key={student.name}>
                 <strong>{student.name}</strong>
-                <span>{student.program}</span>
-                <p>{student.focus}</p>
+                {student.program ? <span>{student.program}</span> : null}
+                {student.focus ? <p>{student.focus}</p> : null}
               </article>
             ))}
           </div>
