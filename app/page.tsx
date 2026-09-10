@@ -7,14 +7,13 @@ export default function Home() {
   return (
     <main>
       <section className="home-hero page-width">
-        <figure className="uitf-hero">
+        <div className="uitf-hero">
           {/* oxlint-disable-next-line nextjs/no-img-element */}
           <img
-            src={siteAsset('/uitf-injector-beamline.png')}
-            alt="The UITF injector beamline at Jefferson Lab."
+            src={siteAsset('/uitf-beamline-schematic-clean.png')}
+            alt="Simplified schematic of the UITF injector beamline at Jefferson Lab."
           />
-          <figcaption>UITF injector beamline · Jefferson Lab</figcaption>
-        </figure>
+        </div>
 
         <div className="home-hero-copy">
           <p className="eyebrow">Digital Twin Injector Project</p>

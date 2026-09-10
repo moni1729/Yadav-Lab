@@ -116,23 +116,13 @@ footer a:hover {
 
 .uitf-hero {
   margin: 0 auto 76px;
-  max-width: 1000px;
+  max-width: 1100px;
 }
 
 .uitf-hero img {
-  aspect-ratio: 16 / 5;
-  border: 1px solid var(--line);
   display: block;
-  object-fit: cover;
-  object-position: center 62%;
+  height: auto;
   width: 100%;
-}
-
-.uitf-hero figcaption {
-  color: var(--muted);
-  font-size: 0.7rem;
-  margin-top: 8px;
-  text-align: right;
 }
 
 .home-hero-copy {
@@ -475,10 +465,6 @@ footer {
     gap: 8px 20px;
   }
 
-  .uitf-hero img {
-    aspect-ratio: 16 / 7;
-  }
-
   .roster-section {
     padding-left: 0;
   }
@@ -506,14 +492,6 @@ footer {
 
   .uitf-hero {
     margin-bottom: 56px;
-  }
-
-  .uitf-hero img {
-    aspect-ratio: 4 / 3;
-  }
-
-  .uitf-hero figcaption {
-    text-align: center;
   }
 
   .inner-page {
