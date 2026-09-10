@@ -111,7 +111,7 @@ export const siteData = {
     {
       name: 'Kamelia',
       initials: 'K',
-      program: 'Graduate Researcher',
+      program: "Master's Student",
     },
   ] as Array<{
     name: string;
