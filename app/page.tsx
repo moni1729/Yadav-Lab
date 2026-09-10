@@ -1,57 +1,52 @@
-import { ArrowUpRight, Mail } from 'lucide-react';
+import { ArrowDown, ArrowUpRight } from 'lucide-react';
+import Image from 'next/image';
 
 import { siteData } from '@/content/site-data';
-import { siteRoute } from '@/lib/site-path';
+import { siteAsset, siteRoute } from '@/lib/site-path';
 
-const quickLinks = [
-  {
-    href: '/research',
-    title: 'Research',
-    description:
-      'Digital twins, intelligent control, and trustworthy scientific AI.',
-  },
-  {
-    href: '/team',
-    title: 'Team',
-    description:
-      'Meet the people working across data science and accelerator physics.',
-  },
-  {
-    href: '/join',
-    title: 'Opportunities',
-    description:
-      'Graduate and postdoctoral research opportunities with the group.',
-  },
+const workflowStages = [
+  'Accelerator injector',
+  'Beam diagnostics',
+  'Digital twin',
+  'AI optimization',
+  'Closed-loop control',
 ];
 
 export default function Home() {
   return (
     <main>
       <section className="home-hero page-width">
-        <p className="eyebrow">Old Dominion University</p>
-        <h1>Scientific AI for particle accelerators.</h1>
-        <p>{siteData.introduction}</p>
-        <div className="home-actions">
-          <a className="primary-link" href={siteRoute('/research')}>
-            Explore our research <ArrowUpRight aria-hidden="true" />
-          </a>
-          <a className="secondary-link" href={`mailto:${siteData.email}`}>
-            Contact the group <Mail aria-hidden="true" />
-          </a>
+        <div className="injector-workflow">
+          <div className="workflow-stages" aria-hidden="true">
+            {workflowStages.map((stage) => (
+              <span key={stage}>
+                {stage}
+                <ArrowDown />
+              </span>
+            ))}
+          </div>
+          <Image
+            src={siteAsset('/injector-digital-twin-hero.png')}
+            alt="Illustrated workflow connecting an accelerator injector, beam diagnostics, a digital twin, machine-learning optimization, and closed-loop controls."
+            width={2172}
+            height={724}
+            priority
+            sizes="(max-width: 640px) 100vw, 1040px"
+          />
+          <p className="workflow-caption">
+            An integrated digital-twin workflow for accelerator injectors
+          </p>
         </div>
-      </section>
 
-      <section
-        className="home-links page-width"
-        aria-label="Explore the website"
-      >
-        {quickLinks.map((item) => (
-          <a href={siteRoute(item.href)} key={item.href}>
-            <span>{item.title}</span>
-            <p>{item.description}</p>
+        <div className="home-hero-copy">
+          <p className="eyebrow">Digital Twin Injector Project</p>
+          <h1>AI-enabled digital twins for accelerator injectors.</h1>
+          <p>{siteData.introduction}</p>
+          <a className="hero-cta" href={siteRoute('/projects')}>
+            Explore the project
             <ArrowUpRight aria-hidden="true" />
           </a>
-        ))}
+        </div>
       </section>
     </main>
   );

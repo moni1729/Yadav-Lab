@@ -13,7 +13,7 @@ export const siteData = {
   email: 'myadav@odu.edu',
   lastUpdated: 'September 2026',
   introduction:
-    'We develop scientific machine-learning, digital-twin, and intelligent-control methods for particle accelerators—turning simulation and measurement into trustworthy decisions for complex machines.',
+    'We combine first-principles accelerator models, machine learning, beam diagnostics, and EPICS controls to predict beam behavior, quantify uncertainty, and optimize injector performance.',
 
   pi: {
     name: 'Monika Yadav, Ph.D.',
