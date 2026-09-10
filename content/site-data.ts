@@ -21,13 +21,32 @@ export const siteData = {
     term: 'Fall 2026',
     overview:
       'The course connects machine-learning foundations and optimization methods with applications in scientific computing and particle accelerators.',
-    currentModule: {
-      week: 'Week 3',
-      title: 'Optimization',
-      description:
-        'We study minimization, objective functions, grid and random search, Nelder–Mead, gradient descent, momentum, Adam, and extremum seeking.',
-      focus: 'Derivative-based and derivative-free optimization',
-    },
+    weeks: [
+      {
+        week: 'Week 1',
+        title: 'Course framing and scientific context',
+        status: 'Completed',
+        description:
+          'We distinguish AI, machine learning, deep learning, data science, and scientific machine learning, then examine accelerator facilities, beam diagnostics, and controls as motivating scientific systems.',
+        focus: 'AI · Machine learning · Data science · Accelerator systems',
+      },
+      {
+        week: 'Week 2',
+        title: 'Computational and mathematical foundations',
+        status: 'Completed',
+        description:
+          'We review Python and Jupyter workflows, vectors and matrices, probability, statistics, reproducibility, and the role of high-performance computing in scientific machine learning.',
+        focus: 'Python · Linear algebra · Probability · Reproducibility · HPC',
+      },
+      {
+        week: 'Week 3',
+        title: 'Optimization',
+        status: 'Current module',
+        description:
+          'We study minimization, objective functions, grid and random search, Nelder–Mead, gradient descent, momentum, Adam, and extremum seeking.',
+        focus: 'Derivative-based and derivative-free optimization',
+      },
+    ],
     presentationNote:
       'Each student will give a 10-minute presentation during class.',
   },

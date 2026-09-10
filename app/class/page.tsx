@@ -32,16 +32,18 @@ export default function ClassPage() {
           </p>
         </article>
 
-        <article>
-          <div className="list-heading">
-            <h2>
-              {course.currentModule.week}: {course.currentModule.title}
-            </h2>
-            <span>Current module</span>
-          </div>
-          <p>{course.currentModule.description}</p>
-          <p className="meta">{course.currentModule.focus}</p>
-        </article>
+        {course.weeks.map((week) => (
+          <article key={week.week}>
+            <div className="list-heading">
+              <h2>
+                {week.week}: {week.title}
+              </h2>
+              <span>{week.status}</span>
+            </div>
+            <p>{week.description}</p>
+            <p className="meta">{week.focus}</p>
+          </article>
+        ))}
 
         <article>
           <div className="list-heading">
