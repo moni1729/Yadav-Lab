@@ -52,6 +52,7 @@ jobs:
           test -f dist/client/projects.html
           test -f dist/client/publications.html
           test -f dist/client/funding.html
+          test -f dist/client/class.html
           test -f dist/client/join.html
           test -d dist/client/_next
 

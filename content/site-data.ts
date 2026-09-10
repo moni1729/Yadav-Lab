@@ -15,6 +15,23 @@ export const siteData = {
   introduction:
     'The Upgraded Injector Test Facility at Jefferson Lab provides the injector test case for our physics-based modeling, machine-learning, and controls research.',
 
+  course: {
+    code: 'DASC 495/595',
+    title: 'Machine Learning & Data Science',
+    term: 'Fall 2026',
+    overview:
+      'The course connects machine-learning foundations and optimization methods with applications in scientific computing and particle accelerators.',
+    currentModule: {
+      week: 'Week 3',
+      title: 'Optimization',
+      description:
+        'We study minimization, objective functions, grid and random search, Nelder–Mead, gradient descent, momentum, Adam, and extremum seeking.',
+      focus: 'Derivative-based and derivative-free optimization',
+    },
+    presentationNote:
+      'Each student will give a 10-minute presentation during class.',
+  },
+
   pi: {
     name: 'Monika Yadav, Ph.D.',
     title:

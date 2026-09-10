@@ -11,6 +11,7 @@ const navigation = [
   { href: '/projects', label: 'Projects' },
   { href: '/publications', label: 'Publications' },
   { href: '/funding', label: 'Funding' },
+  { href: '/class', label: 'Class' },
   { href: '/join', label: 'Join' },
 ];
 
