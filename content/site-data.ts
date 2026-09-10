@@ -144,7 +144,7 @@ export const siteData = {
       title:
         'AI-Enabled Digital Twins and Optimization Workflows for Accelerator Control',
       authors: 'M. Yadav et al.',
-      url: 'https://www.ipac26.org/prepress/doi/jacow-ipac2026-mop6335/index.html',
+      url: 'https://digitalcommons.odu.edu/cgi/viewcontent.cgi?article=2062&context=physics_fac_pubs',
     },
     {
       year: '2025',
