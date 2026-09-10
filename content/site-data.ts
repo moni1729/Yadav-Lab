@@ -21,6 +21,7 @@ export const siteData = {
     term: 'Fall 2026',
     overview:
       'The course connects machine-learning foundations and optimization methods with applications in scientific computing and particle accelerators.',
+    focus: 'Machine learning · Data science · Scientific AI',
     weeks: [
       {
         week: 'Week 1',
@@ -50,6 +51,27 @@ export const siteData = {
     presentationNote:
       'Each student will give a 10-minute presentation during class.',
   },
+
+  additionalCourses: [
+    {
+      code: 'DASC 300',
+      title: 'Foundations of Data Science',
+      term: 'Fall 2025',
+      overview:
+        'An interdisciplinary introduction to organizing, preparing, visualizing, and analyzing data. Students study data collection, Python and R, statistical learning, model evaluation, and the ethical use of data.',
+      focus:
+        'Data preparation · Visualization · Statistical learning · Model evaluation · Ethics',
+    },
+    {
+      code: 'DASC 690',
+      title: 'Data Science Capstone',
+      term: 'Summer & Fall 2026',
+      overview:
+        'The culminating project experience in which students apply program knowledge to a real-world or research-based problem. Projects may involve external partners, faculty advisors, workplace contexts, or instructor-approved topics, with emphasis on independent and creative thinking, collaboration, documentation, and professional communication.',
+      focus:
+        'Problem framing · Reproducible analysis · Validation · Communication',
+    },
+  ],
 
   pi: {
     name: 'Monika Yadav, Ph.D.',

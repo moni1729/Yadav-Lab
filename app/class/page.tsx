@@ -4,32 +4,32 @@ import { PageIntro } from '@/components/page-intro';
 import { siteData } from '@/content/site-data';
 
 export const metadata: Metadata = {
-  title: 'DASC 495/595 | Yadav Research Group',
+  title: 'Teaching | Yadav Research Group',
   description:
-    'Course information for DASC 495/595: Machine Learning & Data Science, Fall 2026.',
+    "Courses taught by Monika Yadav at Old Dominion University's School of Data Science.",
 };
 
 export default function ClassPage() {
-  const { course } = siteData;
+  const { course, additionalCourses } = siteData;
 
   return (
     <main className="inner-page page-width">
       <PageIntro
-        label="Class"
-        title={course.code}
-        description={`${course.title} · ${course.term}`}
+        label="Teaching"
+        title="Courses"
+        description="Data science courses taught at Old Dominion University."
       />
 
       <div className="detail-list">
         <article>
           <div className="list-heading">
-            <h2>Course focus</h2>
-            <span>Overview</span>
+            <h2>
+              {course.code}: {course.title}
+            </h2>
+            <span>{course.term}</span>
           </div>
           <p>{course.overview}</p>
-          <p className="meta">
-            Machine learning · Data science · Scientific AI
-          </p>
+          <p className="meta">{course.focus}</p>
         </article>
 
         {course.weeks.map((week) => (
@@ -52,6 +52,19 @@ export default function ClassPage() {
           </div>
           <p>{course.presentationNote}</p>
         </article>
+
+        {additionalCourses.map((additionalCourse) => (
+          <article key={additionalCourse.code}>
+            <div className="list-heading">
+              <h2>
+                {additionalCourse.code}: {additionalCourse.title}
+              </h2>
+              <span>{additionalCourse.term}</span>
+            </div>
+            <p>{additionalCourse.overview}</p>
+            <p className="meta">{additionalCourse.focus}</p>
+          </article>
+        ))}
       </div>
     </main>
   );
