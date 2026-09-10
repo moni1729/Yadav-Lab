@@ -13,7 +13,7 @@ export const siteData = {
   email: 'myadav@odu.edu',
   lastUpdated: 'September 2026',
   introduction:
-    'We use physics-based models, machine learning, and controls data to predict beam behavior and improve accelerator injector performance.',
+    'The Upgraded Injector Test Facility at Jefferson Lab provides the injector test case for our physics-based modeling, machine-learning, and controls research.',
 
   pi: {
     name: 'Monika Yadav, Ph.D.',
